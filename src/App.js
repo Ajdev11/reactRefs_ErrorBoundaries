@@ -4,7 +4,7 @@ import ClassComponents from './Components/classcomp';
 import Hello from './Components/props';
 import ClassProps from './Components/propsclass';
 import State from './Components/stateClass';
-
+import PropsMethod from './Components/methodProps';
 class App extends Component {
     state = {  } 
     render() { 
@@ -15,6 +15,7 @@ class App extends Component {
             <Hello name = "Moses" otherNames = "Olaseni" />
             <ClassProps aka = "Engineer" alias ="Baddest" />
             <State />
+            <PropsMethod />
             </>
         );
     }
