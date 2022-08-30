@@ -29,22 +29,23 @@ handleSubmit=(event)=>{
     event.preventDefault();
 }
   render() {
+    const {username, comment, Topics} = this.state
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
           <label>Username</label>
           <input
-            value={this.state.username}
+            value={username}
             onChange={this.handleUsernameChange}
           />
         </div>
         <div>
           <label>Comment</label>
-          <textarea value={this.state.comment} onChange={this.handleComment} />
+          <textarea value={comment} onChange={this.handleComment} />
         </div>
         <div>
           <label>Topics</label>
-          <select value={this.state.Topics} onChange={this.handleTopics}>
+          <select value={Topics} onChange={this.handleTopics}>
             <option>React</option>
             <option>Angular</option>
             <option>Javascript</option>
