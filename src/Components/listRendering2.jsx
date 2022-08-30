@@ -8,7 +8,7 @@ function NameList(){
    ]
    const PersonObj = Persons.map(person=>(
 //
-  <People person={person}/>
+  <People key={person.Name} person={person}/>
    ))
    return(
       <div>
