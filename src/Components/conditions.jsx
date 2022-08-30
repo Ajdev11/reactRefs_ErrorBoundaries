@@ -24,7 +24,7 @@ class ConditionalRendering extends Component {
         return <div>{message}</div>*/
     //the best approach for conditional rendering is the tenary method;
  return (
-    this.state.isLoggedIn ? (<idv>Welcome AJdEV</idv>) : (<div>Goodbye Ajdev</div>)
+    this.state.isLoggedIn ? (<div>Welcome AJdEV</div>) : (<div>Goodbye Ajdev</div>)
  )
   }
 }

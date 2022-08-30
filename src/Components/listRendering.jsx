@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Person(){
+function People({person}){
     return ( 
         <>
-        <h2>I am {names.name}, i am {names.age} and i have a skill of {names.skill}</h2>
+        <h1>I am{person.Name}, i love coding{person.skills}</h1>
         </>
      );
 }
  
-export default Person;
+export default People;

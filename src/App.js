@@ -7,7 +7,7 @@ import ClassProps from './Components/propsclass';
 import State from './Components/stateClass';
 import PropsMethod from './Components/methodProps';
 import ConditionalRendering from './Components/conditions';
-import PersonList from './Components/listRendering2';
+import NameList from './Components/listRendering2';
 
 class App extends Component {
     state = {  } 
@@ -23,7 +23,7 @@ class App extends Component {
             <ConditionalRendering />
             </>*/
             <>
-            <PersonList />
+            <NameList />
             </>
         );
     }
