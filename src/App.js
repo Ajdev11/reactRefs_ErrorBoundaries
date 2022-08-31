@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import "./index.css"
+import React, { Component } from "react";
+import "./index.css";
 //import FunctionalApp from './Components/type of components';
 //import ClassComponents from './Components/classcomp';
 //import Hello from './Components/props';
@@ -11,13 +11,14 @@ import "./index.css"
 //import Form from './Components/form';
 //import LifeCycle from './Components/lifecycleA';
 //import PureComp from './Components/PureComponents';
-import ParentComp from './Components/ParentComponents';
+//import ParentComp from './Components/ParentComponents';
+import RefDemo from "./Components/refsDemo";
 
 class App extends Component {
-    state = {  } 
-    render() { 
-        return (
-           /* <>
+  state = {};
+  render() {
+    return (
+      /* <>
             <FunctionalApp  />
             <ClassComponents />
             <Hello name = "Moses" otherNames = "Olaseni" />
@@ -27,13 +28,14 @@ class App extends Component {
             <ConditionalRendering />
             <NameList />
             <Form />
-             <LifeCycle />
+            <LifeCycle />
+            <ParentComp />
             </>*/
-            <>
-           <ParentComp />
-            </>
-        );
-    }
+      <>
+      <RefDemo />
+      </>
+    );
+  }
 }
- 
+
 export default App;
