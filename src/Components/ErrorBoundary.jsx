@@ -7,14 +7,20 @@ class ErrorHandling  extends Component {
             hasError:false
         }
     }
-    static getDerivedStateFromError(error) {
+    //The static method(Gsd) is used  to render a fallback UI after an error is thrown
+    static getDerivedStateFromError(nextProps, prevState) {
         return{
             hasError: true
         }
     }
+    //and the components method is used to log the error information to the console
+    componentDidCatch(error, info) {
+        console.log(error)
+        console.log(info)
+    }
     render() { 
        if(this.state.hasError){
-        return<h1>Something Ain't Right</h1>
+        return<h1>Name is Wrong!!</h1>
        }return this.props.children
     }
 }
