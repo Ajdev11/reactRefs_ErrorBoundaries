@@ -7,13 +7,17 @@ class RefDemo extends Component {
   }
 
   componentDidMount() {
-    this.inputRef.current.focus();
+    //this.inputRef.current.focus();
+    console.log(this.inputRef)
   }
-
+handleClick=()=>{
+    this.inputRef.current.focus();
+}
   render() {
     return (
       <div>
         <input ref={this.inputRef} />
+        <button onClick={this.handleClick}>focus Input</button>
       </div>
     );
   }
