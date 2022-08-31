@@ -8,3 +8,6 @@ function Portal() {
   );
 }
 export default Portal;
+//The React portals helps us to render children to the Dom tree that
+//exist utside the Parent tree
+//pRovides the ability to breakout of the parent tree

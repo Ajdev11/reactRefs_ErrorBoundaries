@@ -14,10 +14,9 @@ import "./index.css";
 //import PureComp from './Components/PureComponents';
 //import ParentComp from './Components/ParentComponents';
 //import RefDemo from "./Components/refsDemo";
-import Portal from "./Components/portal";
-
-
-
+//import Portal from "./Components/portal";
+import Hero from "./Components/Hero";
+import ErrorHandling from "./Components/ErrorBoundary";
 
 class App extends Component {
   state = {};
@@ -37,9 +36,13 @@ class App extends Component {
             <ParentComp />
             <RefDemo />
             <ParentComp />
+            <Portal />
             </>*/
       <>
-       <Portal />
+      <ErrorHandling>
+      <Hero heroName="Moses" /></ErrorHandling>
+      <ErrorHandling><Hero heroName="Augusta" /></ErrorHandling>
+      <ErrorHandling><Hero heroName="ChukwuDumebi" /></ErrorHandling>
       </>
     );
   }
