@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PureComponent } from 'react';
 import PureComp from './PureComponents';
 import RegComp from './RegularCopm';
 
@@ -10,6 +10,7 @@ class ParentComp extends Component {
         }
     } 
     render() { 
+        console.log(PureComponent, RegComp)
         return (
             <>
             <h2>{this.state.name}</h2>

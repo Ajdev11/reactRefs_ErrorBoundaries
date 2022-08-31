@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PortalRoot from "./Components/portal";
 import "./index.css";
 //import FunctionalApp from './Components/type of components';
 //import ClassComponents from './Components/classcomp';
@@ -12,7 +13,11 @@ import "./index.css";
 //import LifeCycle from './Components/lifecycleA';
 //import PureComp from './Components/PureComponents';
 //import ParentComp from './Components/ParentComponents';
-import RefDemo from "./Components/refsDemo";
+//import RefDemo from "./Components/refsDemo";
+import Portal from "./Components/portal";
+
+
+
 
 class App extends Component {
   state = {};
@@ -30,9 +35,11 @@ class App extends Component {
             <Form />
             <LifeCycle />
             <ParentComp />
+            <RefDemo />
+            <ParentComp />
             </>*/
       <>
-      <RefDemo />
+       <Portal />
       </>
     );
   }
